@@ -37,7 +37,7 @@ col1.metric("Total Transactions", f"{filtered_data['transaction_count'].sum():,}
 col2.metric("Total Amount", f"₹{filtered_data['transaction_amount'].sum():,.2f}")
 col3.metric("Data Points", len(filtered_data))
 
-# Charts for visualization
+# Charts for Visualization
 st.subheader("Transaction Trend Over Time")
 if 'quarter' in filtered_data.columns:
     st.line_chart(filtered_data.groupby('quarter')['transaction_count'].sum())
