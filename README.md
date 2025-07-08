@@ -17,11 +17,17 @@ This project contains scripts and data files for extracting and analyzing transa
 
 - Python 3.x
 - Jupyter Notebook
-- pandas (for data analysis)
+- os: Used to navigate folders and loop through the PhonePe dataset stored in multiple directories.
+- json: Used to parse .json files into Python dictionaries for extracting transaction data.
+- pandas: Used to convert parsed data into DataFrames for cleaning, transformation, and analysis.
+- numpy: Used for numerical computations like scaling and applying dimensionality reduction techniques.
+- matplotlib.pyplot: Used to create basic visualizations like bar charts and pie charts.
+- seaborn: Used to create advanced statistical plots like heatmaps and pairplots for deeper insights.
+- warnings: Used to suppress unwanted warning messages to keep the notebook clean and readable.
 
 Install dependencies using:
 ```bash
-pip install pandas jupyter
+pip install pandas numpy matplotlib seaborn jupyter
 ```
 
 ## License
